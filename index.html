@@ -7,20 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IFerno</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-
+<header>
     <!-- menu -->
     <nav>
         <div class="menu">
             <ul>
                 <li><a href="#">Inicio</a></li>
                 <li><a href="#sobre">Sobre</a></li>
-                <li><a href="teste">teste</a></li>
-                <li><a href="#titulo_artista">Artistas</a></li>
-                <li><a href="#titulo_prog">Contatos</a></li>
-                <li><a href="#">Eventos</a></li>
+                <li><a href="#artistas">Artistas</a></li>
+                <li><a href="#programacao">Programação</a></li>
+                <li><a href="#formulario">Cadastro</a></li>
             </ul>
             <div class="menu_direito">
                 <h3 id="IFerno">IF-erno</h3>
@@ -28,8 +28,9 @@
             </div>
         </div>
     </nav>
+</header>
 
-
+<main>
     <div class="main">
         <!-- video -->
 
@@ -47,13 +48,13 @@
 
     </div>
 
+</main>
 
-
+<section>
     <!-- SOBRE -->
     <div class="sobre" id="sobre">
 
         <h1 id="titulo_sobre">&#9886; Sobre &#9887;</h1>
-
 
         <h4 id="titulo2_sobre">Prepare-se para uma noite inesquecível na festa mais animada da cidade! &#9788;</h4>
         <p id="texto_sobre">Nossa festa é o lugar para estar! Com uma atmosfera única e vibrante, você vai se sentir em
@@ -81,9 +82,10 @@
         </ul>
         <img id="sobre_evento_img" src="Imagem/evento_sobre.jpg" alt="Evento sobre">
     </div>
-
+</section>
+<section>
     <!-- artistas -->
-    <div class="artistas">
+    <div class="artistas" id="artistas">
 
         <h1 id="titulo_artista">Artistas </h1>
 
@@ -97,9 +99,10 @@
         <!--  <h3 id="art3_sub">AC/DC</h3> -->
 
     </div>
-
+</section>
+<section>
     <!-- Programação -->
-    <div class="programacao">
+    <div class="programacao" id="programacao">
 
         <h1 id="titulo_prog">Programação </h1>
         <table id="tabela_prog">
@@ -179,9 +182,9 @@
             </tbody>
         </table>
     </div>
-
-
-    <div class="formulario">
+</section>
+<section>
+    <div class="formulario" id="formulario">
         <h1 id="titulo_form">Interessado? Vamos conversar! </h1>
 
         <form id="form">
@@ -205,12 +208,43 @@
                 <label><strong>Observações</strong> </label>
                 <textarea name="observa" id="caixaform" rows="7" style="width: 50%"></textarea>
             </div>
-            <button class="btn" type="submit">Concluido</button>
-
+            <button class="btn" type="submit" >Concluido</button>
         </form>
+    </div>
+</section>
+<footer>
+    <div class="conteudo-footer">
+        <div class="conteudo1">
+           <h3>Institucional:</h3>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#artistas">Artistas</a></li>
+                <li><a href="#programacao">Programação</a></li>
+                <li><a href="#">Eventos</a></li>                  
+        </div>
+        <div class="conteudo2">
+            <h2>Redes Socias</h2>
 
+            <div class="redes-sociais">
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+
+        <div class="conteudo3">
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.610064184653!2d-45.59472888503738!3d-22.7427303850955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cc89dae7f8099f%3A0x198fcf4cf3c2df0d!2sInstituto%20Federal%20de%20Educa%C3%A7%C3%A3o%2C%20Ci%C3%AAncia%20e%20Tecnologia%20de%20S%C3%A3o%20Paulo%20-%20Campus%20Campos%20do%20Jord%C3%A3o!5e0!3m2!1spt-BR!2sbr!4v1684881848612!5m2!1spt-BR!2sbr" width="400" height="180" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+
+        </div>
 
     </div>
+
+</footer>
+
+</footer>   
 </body>
 
 </html>

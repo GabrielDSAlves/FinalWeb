@@ -23,8 +23,7 @@ html {
   float: left;
   display: flex;
   align-items: center;
-  padding-top: 1.8%;
-  padding-bottom: 1%;
+  padding-top: 1%;
   position: fixed;
   top: 0;
   z-index: 1;
@@ -102,7 +101,7 @@ html {
 
 /* titulo */
 #titulo { 
-  padding-top: 20%;
+  padding-top: 10%;
   text-align: center;
   float: right;
   width: 100%;
@@ -137,8 +136,8 @@ html {
   background: #EE5007;
   border-radius: 2em;
   color: #ffffff;
-  font-size: 2em;
-  font-weight: 700;
+  font-size: 25px;
+  font-weight: 500;
   transition: all 0.3s;
   padding: 0.6em 1.2em;
 }
@@ -174,7 +173,7 @@ html {
   overflow: hidden;
   width: 100%;
   padding-top: 100px;
-  height: calc(100vh - 51px);
+  height: calc(110vh - 50px);
 
   /* imagem de fundo */
   background-image: url('../Imagem/fundo_sobre.jpg');
@@ -182,7 +181,7 @@ html {
 }
 
 #titulo_sobre {
-  font-size: 55px;
+  font-size: 40px;
   text-align: center;
   width: 100%;
   color: #ffffff;
@@ -192,7 +191,7 @@ html {
 #titulo2_sobre {
   width: 30%;
   font-size: 23px;
-  padding-top: 10%;
+  padding-top: 5%;
   padding-left: 10%;
   color: white;
   font-family: 'Outfit', sans-serif;
@@ -400,9 +399,12 @@ html {
 .formulario{
   overflow: hidden;
   width: 100%;
-  padding-top: 2em;
-  height: calc(100vh - 51px);
+  padding-top: 10%;
+  padding-bottom: 5%;
+  height: calc(100vh - 50px);
   background-color: rgb(230, 236, 241);
+  display: block;
+  margin: 0 auto;
 }
 
 #form{
@@ -413,6 +415,8 @@ html {
   margin: 0 auto;
   background-color: #ffffff;
   filter: drop-shadow(15px 15px 20px#606060);
+  display: block;
+  margin: 0 auto;
 }
 
 .campo{
@@ -441,12 +445,11 @@ html {
 
 
 .btn{
-  position: relative;
-  display: block; 
-  margin: auto;
-  margin-top: 5%;
+  margin-top: 1%;
   background: #EE5007;
   border: 0;
+  display: block;
+  margin: 0 auto;
   border-radius: 2em;
   margin-bottom: 2em;
   color: #ffffff;
@@ -454,7 +457,7 @@ html {
   font-weight: 700; /* deixa o texto mais encorpado */
   transition: all 0.3s;
   padding: 1em 1.0em;
-  width: 23%;
+  width: 18%;
   text-align: center;
 }
 
@@ -465,4 +468,55 @@ html {
 
 #caixaform:focus{
     border: rgb(81, 81, 236) 3px solid;
+}
+
+
+footer{
+  background-color:rgb(46,46, 46) ;
+}
+
+.conteudo-footer{
+  display: flex;
+  justify-content: space-around;
+  color: #fff;
+  flex-wrap: wrap;
+}
+
+footer .conteudo1{
+  width:200px;
+  padding: 0 10px;
+  margin-bottom: 30px;
+  margin-top: 1%;
+}
+.conteudo1 li a, li, ul {
+  text-decoration: none;
+  display: block;
+  color: rgb(255, 255, 255);
+  display: flex;
+
+}
+
+footer .conteudo2{
+  width:300px;
+  margin-bottom: 30px;
+  margin-top: 1%;
+}
+
+footer .conteudo3{
+  width: 400px;
+  padding: 0 40px;
+  margin-top: 1%;
+}
+.redes-sociais{
+  display: flex;
+  justify-content: space-around;
+}
+footer .redes-sociais i{
+ font-size: 32px;
+ text-align: center;
+ color: #fff;
+}
+footer .conteudo2 h2{
+  text-align: center;
+  margin-bottom: 20px ;
 }
