@@ -7,7 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IFerno</title>
     <link rel="stylesheet" href="css/style.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body>
@@ -56,12 +62,15 @@
 
         <h1 id="titulo_sobre">&#9886; Sobre &#9887;</h1>
 
-        <h4 id="titulo2_sobre">Prepare-se para uma noite inesquecível na festa mais animada da cidade! &#9788;</h4>
-        <p id="texto_sobre">Nossa festa é o lugar para estar! Com uma atmosfera única e vibrante, você vai se sentir em
-            casa desde o
-            momento em que entrar. Nossos DJs vão tocar os melhores hits de todos os tempos, fazendo com que você dance
-            até o amanhecer. Além disso, nosso barman talentoso estará preparando coquetéis exclusivos que vão deixar
-            sua noite ainda mais especial.</p>
+        <div class="textopagina">
+
+            <h4 id="titulo2_sobre">Prepare-se para uma noite inesquecível na festa mais animada da cidade! &#9788;</h4>
+            <p id="texto_sobre">Nossa festa é o lugar para estar! Com uma atmosfera única e vibrante, você vai se sentir em
+                casa desde o
+                momento em que entrar. Nossos DJs vão tocar os melhores hits de todos os tempos, fazendo com que você dance
+                até o amanhecer. Além disso, nosso barman talentoso estará preparando coquetéis exclusivos que vão deixar
+                sua noite ainda mais especial.</p>
+        </div>
 
 
         <ul id="item_sobre">
@@ -80,7 +89,14 @@
                 <font color="#EE5007">&#10161;</font> Hora: 20:30
             </li>
         </ul>
-        <img id="sobre_evento_img" src="Imagem/evento_sobre.jpg" alt="Evento sobre">
+        
+
+        <div class="carrossel" id="sobre_evento_img">
+            <img src="Imagem/4400_18_01.jpg" alt="">
+            <img src="Imagem/3700_6_10.jpg" alt="">
+            <img  src="Imagem/evento_sobre.jpg" alt="Evento sobre">
+        </div> 
+        
     </div>
 </section>
 <section>
@@ -103,7 +119,6 @@
 <section>
     <!-- Programação -->
     <div class="programacao" id="programacao">
-
         <h1 id="titulo_prog">Programação </h1>
         <table id="tabela_prog">
             <thead>
@@ -185,6 +200,7 @@
 </section>
 <section>
     <div class="formulario" id="formulario">
+
         <h1 id="titulo_form">Interessado? Vamos conversar! </h1>
 
         <form id="form">
@@ -197,12 +213,15 @@
                 <input type="text" name="sobrenome" id="caixaform" required>
             </div>
 
-
             <div class="campo">
                 <label for="email"><strong> E-mail</strong></label>
                 <input type="email" name="email" pattern="[^ @]*@[^ @]*" id="caixaform" required>
             </div>
 
+            <div class="campo">
+                    <label for="telefone"><strong>Telefone:</strong></label>
+                    <input type="tel" name="telefone" id="telefone" required>
+            </div>
             <div class="campo">
                 <br>
                 <label><strong>Observações</strong> </label>
@@ -212,39 +231,50 @@
         </form>
     </div>
 </section>
-<footer>
-    <div class="conteudo-footer">
-        <div class="conteudo1">
-           <h3>Institucional:</h3>
+    <footer>
+        <div class="conteudo-footer">
+            <div class="conteudo1">
+            <h3>Institucional:</h3>
                 <li><a href="#">Inicio</a></li>
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#artistas">Artistas</a></li>
                 <li><a href="#programacao">Programação</a></li>
-                <li><a href="#">Eventos</a></li>                  
-        </div>
-        <div class="conteudo2">
-            <h2>Redes Socias</h2>
-
-            <div class="redes-sociais">
-                <a href=""><i class="fa-brands fa-instagram"></i></a>
-                <a href=""><i class="fa-brands fa-facebook"></i></a>
-                <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                <li><a href="#formulario">Cadastro</a></li>           
+            </div>
+            <div class="conteudo2">
+                <h2>Redes Socias</h2>
+                <div class="redes-sociais">
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="conteudo3">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.610064184653!2d-45.59472888503738!3d-22.7427303850955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cc89dae7f8099f%3A0x198fcf4cf3c2df0d!2sInstituto%20Federal%20de%20Educa%C3%A7%C3%A3o%2C%20Ci%C3%AAncia%20e%20Tecnologia%20de%20S%C3%A3o%20Paulo%20-%20Campus%20Campos%20do%20Jord%C3%A3o!5e0!3m2!1spt-BR!2sbr!4v1684881848612!5m2!1spt-BR!2sbr" width="400" height="180" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
             </div>
         </div>
+    </footer>
 
-        <div class="conteudo3">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" ></script>
 
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.610064184653!2d-45.59472888503738!3d-22.7427303850955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cc89dae7f8099f%3A0x198fcf4cf3c2df0d!2sInstituto%20Federal%20de%20Educa%C3%A7%C3%A3o%2C%20Ci%C3%AAncia%20e%20Tecnologia%20de%20S%C3%A3o%20Paulo%20-%20Campus%20Campos%20do%20Jord%C3%A3o!5e0!3m2!1spt-BR!2sbr!4v1684881848612!5m2!1spt-BR!2sbr" width="400" height="180" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-        </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js" integrity="sha512-pHVGpX7F/27yZ0ISY+VVjyULApbDlD0/X0rgGbTqCE7WFW5MezNTWG/dnhtbBuICzsd0WQPgpE4REBLv+UqChw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!---Teste teste-->
+    <script>
+        $('.carrossel').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        dots: true,
+        });
 
-    </div>
-
-</footer>
-
-</footer>   
+        $(document).ready(function(){
+            $('#telefone').mask('(00)0000-0000');
+        })
+</script>  
 </body>
-
 </html>

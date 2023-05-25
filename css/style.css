@@ -211,7 +211,7 @@ html {
 }
 
 #item_sobre {
-  float: left;
+
   display: block;
   color: white;
   padding-left: 9.5%;  
@@ -231,10 +231,11 @@ html {
 
 #sobre_evento_img {
   filter: brightness(70%);
-  position: absolute;
-  width: 45%;
+  position: absolute; 
+   width: 45%;
   top: 140%;
   left: 50%;
+  z-index: 3;
 }
 
 /* Artistas */
@@ -456,7 +457,7 @@ html {
   font-size: 01em;
   font-weight: 700; /* deixa o texto mais encorpado */
   transition: all 0.3s;
-  padding: 1em 1.0em;
+  padding: 1em  1.0em;
   width: 18%;
   text-align: center;
 }
@@ -470,7 +471,7 @@ html {
     border: rgb(81, 81, 236) 3px solid;
 }
 
-
+/*Rodape*/
 footer{
   background-color:rgb(46,46, 46) ;
 }
@@ -519,4 +520,28 @@ footer .redes-sociais i{
 footer .conteudo2 h2{
   text-align: center;
   margin-bottom: 20px ;
+}
+
+/*Responsividade*/
+
+@media screen and (max-width:700px) {
+
+  .sobre_evento_img{
+    width: 100%;
+    display: block;
+    height: auto;
+    flex-direction: column;
+
+  }
+
+  .textopagina{
+    width: 100%;
+    display: block;
+    flex-direction: column;
+
+
+  }
+  nav{
+      position: static
+  }
 }
