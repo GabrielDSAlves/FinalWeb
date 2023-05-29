@@ -11,6 +11,11 @@ html {
   margin: 0;
 }
 
+
+.menu.scrolled {
+  background-color: black; /* Defina a cor de fundo da navbar quando a página for rolada */
+}
+
 .menu-toggle {
   display: none;
   /* Esconde o botão toggle em telas maiores */
@@ -71,9 +76,12 @@ ul {
   font-size: 18px;
   text-align: center;
   text-decoration: none;
-  background-color: #c01f27;
+  background-color: #EE5007;
   color: #ffffff;
   border-radius: 20px;
+  height: 50%;
+  margin-top: 2%;
+  border-color: #EE5007;
 }
 
 .botao:hover {

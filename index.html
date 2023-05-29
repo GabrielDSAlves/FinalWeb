@@ -25,7 +25,7 @@
 <body>
     <header>
         <!-- menu -->
-        <nav>
+        <nav class="navbar">
             <div class="menu" id="navbarNav">
                 <ul>
                     <li><a href="#">Inicio</a></li>
@@ -298,6 +298,17 @@
         });
 
 
+        // script do scrolled para mudar a cor da navbar
+        window.addEventListener('scroll', function () {
+            var navbar = document.querySelector('.menu');
+            var scrolled = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (scrolled > 100) { // Defina a quantidade de rolagem que ativa a mudança de cor
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
     </script>
 </body>
 
