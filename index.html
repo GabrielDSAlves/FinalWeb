@@ -7,209 +7,298 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IFerno</title>
     <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body>
+    <header>
+        <!-- menu -->
+        <nav>
+            <div class="menu" id="navbarNav">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#artistas">Artistas</a></li>
+                    <li><a href="#programacao">Programação</a></li>
+                    <li><a href="#formulario">Cadastro</a></li>
+                </ul>
+                <div class="menu_direito">
+                    <h3 id="IFerno">IF-erno</h3>
+                    <button class="botao" type="button">Ingressos</button>
+                </div>
+            </div>
+            <button class="menu-toggle" aria-label="Menu"></button>
+        </nav>
+    </header>
 
-    <!-- menu -->
-    <nav>
-        <div class="menu">
-            <ul>
+    <main>
+        <div class="main">
+            <!-- video -->
+
+            <div class="video">
+                <video autoplay="" loop="" muted="" class="customizacaovideo" poster="">
+                    <source src="video/pexels-2022395.mp4" type="video/mp4">
+                </video>
+            </div>
+            <small id="titulo">Festival IFerno 2023</small> <!--Small ?? -->
+
+            <button class="botao_inicio" type="submit" value="#sobre"><a href="#sobre">Sobre o evento</a></button>
+
+
+            <h5 id="dia"><img src="Imagem/relogio.png" alt="relogio" id="relogio"> Dia 23/12 no IFSP</h5>
+
+        </div>
+
+    </main>
+
+    <section>
+        <!-- SOBRE -->
+        <div class="sobre" id="sobre">
+
+            <h1 id="titulo_sobre">&#9886; Sobre &#9887;</h1>
+
+
+            <div class="carrossel" id="sobre_evento_img">
+                <img src="Imagem/4400_18_01.jpg" alt="">
+                <img src="Imagem/3700_6_10.jpg" alt="">
+                <img src="Imagem/evento_sobre.jpg" alt="Evento sobre">
+            </div>
+
+            <div class="textopagina">
+
+                <h4 id="titulo2_sobre">Prepare-se para uma noite inesquecível na festa mais animada da cidade! &#9788;
+                </h4>
+                <p id="texto_sobre">Nossa festa é o lugar para estar! Com uma atmosfera única e vibrante, você vai se
+                    sentir em
+                    casa desde o
+                    momento em que entrar. Nossos DJs vão tocar os melhores hits de todos os tempos, fazendo com que
+                    você dance
+                    até o amanhecer. Além disso, nosso barman talentoso estará preparando coquetéis exclusivos que vão
+                    deixar
+                    sua noite ainda mais especial.</p>
+
+
+                <ul id="item_sobre">
+                    <li>
+                        <font color="#EE5007">&#10161;</font> IFSP - Campos do jordao
+                    </li>
+                    <li>
+                        <font color="#EE5007">&#10161;</font> Dia: 23/12
+                    </li>
+                </ul>
+                <ul id="item_sobre2">
+                    <li>
+                        <font color="#EE5007">&#10161;</font> Ingressos facilitados
+                    </li>
+                    <li>
+                        <font color="#EE5007">&#10161;</font> Hora: 20:30
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section>
+        <!-- artistas -->
+        <div class="artistas" id="artistas">
+
+            <h1 id="titulo_artista">Artistas </h1>
+
+            <img id="art1" src="Imagem/Artistas/blue_pen.webp" alt="Manoelzito">
+            <!-- <h3 id="art1_sub">Blue Pen</h3> -->
+
+            <img id="art2" src="Imagem/Artistas/Maroon5.jpg" alt="Maroon 5">
+            <!-- <h3 id="art2_sub">Maroon 5</h3> -->
+
+            <img id="art3" src="Imagem/Artistas/ACDC.jpg" alt="acdc">
+            <!--  <h3 id="art3_sub">AC/DC</h3> -->
+
+        </div>
+    </section>
+    <section>
+        <!-- Programação -->
+        <div class="programacao" id="programacao">
+            <h1 id="titulo_prog">Programação </h1>
+            <table id="tabela_prog">
+                <thead>
+                    <tr>
+                        <th>Dias</th>
+                        <th>Segunda-Feira</th>
+                        <th>Quarta-Feira</th>
+                        <th>Sexta-Feira</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody_prog">
+                    <tr>
+                        <th>Dia 1</th>
+
+                        <td id="td_bluepen">
+                            <h3><b> Melhor gênero</b></h3>
+
+                            <p>5:00 - 7:00 PM</p>
+
+                            <p>Blue Pen</p>
+
+                            <div></div>
+                        </td>
+
+                        <td style="background-color: #F3DCD4"></td>
+
+                        <td id="td_acdc">
+                            <h3>Rock & Roll</h3>
+
+                            <p>7:00 - 11:00 PM</p>
+
+                            <p>AC-DC</p>
+
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>Dia 2</th>
+
+                        <td style="background-color: #ECC9C7"></td>
+
+                        <td id="td_marron">
+                            <h3>Pop Rock</h3>
+
+                            <p>6:30 - 9:30 PM</p>
+
+                            <p>Marron 5</p>
+                        </td>
+
+                        <td style="background-color: #D9E3DA"></td>
+                    </tr>
+
+                    <tr>
+                        <th>Dia 3</th>
+
+                        <td>
+                            <h3>DJ</h3>
+
+                            <p>4:30 - 7:30 PM</p>
+
+                            <p>Dead Mouse</p>
+
+                            <div></div>
+                        </td>
+
+                        <td style="background-color: #D1CFC0"></td>
+
+                        <td>
+                            <h3>Trap music</h3>
+
+                            <p>6:00 - 10:00 PM</p>
+
+                            <p>Veigh</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section>
+        <div class="formulario" id="formulario">
+
+            <h1 id="titulo_form">Interessado? Vamos conversar! </h1>
+
+            <form id="form">
+
+                <div class="campo">
+                    <label for="nome"><strong>Nome</strong> </label>
+                    <input type="text" name="Nome" id="caixaform" required>
+
+                    <label for="sobrenome"><strong>Sobrenome</strong> </label>
+                    <input type="text" name="sobrenome" id="caixaform" required>
+                </div>
+
+                <div class="campo">
+                    <label for="email"><strong> E-mail</strong></label>
+                    <input type="email" name="email" pattern="[^ @]*@[^ @]*" id="caixaform" required>
+                </div>
+
+                <div class="campo">
+                    <br>
+                    <label><strong>Observações</strong> </label>
+                    <textarea name="observa" id="caixaform" rows="7" style="width: 50%"></textarea>
+                </div>
+                <button class="btn" type="submit">Concluido</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="conteudo-footer">
+            <div class="conteudo1">
+                <h3>Institucional:</h3>
                 <li><a href="#">Inicio</a></li>
                 <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#titulo_artista">Artistas</a></li>
-                <li><a href="#titulo_prog">Contatos</a></li>
-                <li><a href="#">Eventos</a></li>
-            </ul>
-            <div class="menu_direito">
-                <h3 id="IFerno">IF-erno</h3>
-                <button class="botao" type="submit">Ingressos</button>
+                <li><a href="#artistas">Artistas</a></li>
+                <li><a href="#programacao">Programação</a></li>
+                <li><a href="#formulario">Cadastro</a></li>
+            </div>
+            <div class="conteudo2">
+                <h2>Redes Socias</h2>
+                <div class="redes-sociais">
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="conteudo3">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.610064184653!2d-45.59472888503738!3d-22.7427303850955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cc89dae7f8099f%3A0x198fcf4cf3c2df0d!2sInstituto%20Federal%20de%20Educa%C3%A7%C3%A3o%2C%20Ci%C3%AAncia%20e%20Tecnologia%20de%20S%C3%A3o%20Paulo%20-%20Campus%20Campos%20do%20Jord%C3%A3o!5e0!3m2!1spt-BR!2sbr!4v1684881848612!5m2!1spt-BR!2sbr"
+                    width="100%" height="180" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
             </div>
         </div>
-    </nav>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"
+        integrity="sha512-pHVGpX7F/27yZ0ISY+VVjyULApbDlD0/X0rgGbTqCE7WFW5MezNTWG/dnhtbBuICzsd0WQPgpE4REBLv+UqChw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!---Teste teste-->
+    <script>
+        $('.carrossel').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            dots: true,
+        });
 
 
-    <div class="main">
-        <!-- video -->
+        // script do menu toggle
+        document.addEventListener('DOMContentLoaded', function () {
+            var menuToggle = document.querySelector('.menu-toggle');
+            var menu = document.querySelector('.menu');
 
-        <div class="video">
-            <video autoplay="" loop="" muted="" class="customizacaovideo" poster="">
-                <source src="video/pexels-2022395.mp4" type="video/mp4">
-            </video>
-        </div>
-        <small id="titulo">Festival IFerno 2023</small> <!--Small ?? -->
-
-        <button class="botao_inicio" type="submit" value="#sobre"><a href="#sobre">Sobre o evento</a></button>
-
-
-        <h5 id="dia"><img src="Imagem/relogio.png" alt="relogio" id="relogio"> Dia 23/12 no IFSP</h5>
-
-    </div>
+            menuToggle.addEventListener('click', function () {
+                this.classList.toggle('active');
+                menu.classList.toggle('active');
+            });
+        });
 
 
-
-    <!-- SOBRE -->
-    <div class="sobre" id="sobre">
-
-        <h1 id="titulo_sobre">&#9886; Sobre &#9887;</h1>
-
-
-        <h4 id="titulo2_sobre">Prepare-se para uma noite inesquecível na festa mais animada da cidade! &#9788;</h4>
-        <p id="texto_sobre">Nossa festa é o lugar para estar! Com uma atmosfera única e vibrante, você vai se sentir em
-            casa desde o
-            momento em que entrar. Nossos DJs vão tocar os melhores hits de todos os tempos, fazendo com que você dance
-            até o amanhecer. Além disso, nosso barman talentoso estará preparando coquetéis exclusivos que vão deixar
-            sua noite ainda mais especial.</p>
-
-
-        <ul id="item_sobre">
-            <li>
-                <font color="#EE5007">&#10161;</font> IFSP - Campos do jordao
-            </li>
-            <li>
-                <font color="#EE5007">&#10161;</font> Dia: 23/12
-            </li>
-        </ul>
-        <ul id="item_sobre2">
-            <li>
-                <font color="#EE5007">&#10161;</font> Ingressos facilitados
-            </li>
-            <li>
-                <font color="#EE5007">&#10161;</font> Hora: 20:30
-            </li>
-        </ul>
-        <img id="sobre_evento_img" src="Imagem/evento_sobre.jpg" alt="Evento sobre">
-    </div>
-
-    <!-- artistas -->
-    <div class="artistas">
-
-        <h1 id="titulo_artista">Artistas </h1>
-
-        <img id="art1" src="Imagem/Artistas/blue_pen.webp" alt="Manoelzito">
-        <!-- <h3 id="art1_sub">Blue Pen</h3> -->
-
-        <img id="art2" src="Imagem/Artistas/Maroon5.jpg" alt="Maroon 5">
-        <!-- <h3 id="art2_sub">Maroon 5</h3> -->
-
-        <img id="art3" src="Imagem/Artistas/ACDC.jpg" alt="acdc">
-        <!--  <h3 id="art3_sub">AC/DC</h3> -->
-
-    </div>
-
-    <!-- Programação -->
-    <div class="programacao">
-
-        <h1 id="titulo_prog">Programação </h1>
-        <table id="tabela_prog">
-            <thead>
-                <tr>
-                    <th>Dias</th>
-                    <th>Segunda-Feira</th>
-                    <th>Quarta-Feira</th>
-                    <th>Sexta-Feira</th>
-                </tr>
-            </thead>
-            <tbody id="tbody_prog">
-                <tr>
-                    <th>Dia 1</th>
-
-                    <td id="td_bluepen">
-                        <h3><b> Melhor gênero</b></h3>
-
-                        <p>5:00 - 7:00 PM</p>
-
-                        <p>Blue Pen</p>
-
-                        <div></div>
-                    </td>
-
-                    <td style="background-color: #F3DCD4"></td>
-
-                    <td id="td_acdc">
-                        <h3>Rock & Roll</h3>
-
-                        <p>7:00 - 11:00 PM</p>
-
-                        <p>AC-DC</p>
-
-                    </td>
-                </tr>
-
-                <tr>
-                    <th>Dia 2</th>
-
-                    <td style="background-color: #ECC9C7"></td>
-
-                    <td id="td_marron">
-                        <h3>Pop Rock</h3>
-
-                        <p>6:30 - 9:30 PM</p>
-
-                        <p>Marron 5</p>
-                    </td>
-
-                    <td style="background-color: #D9E3DA"></td>
-                </tr>
-
-                <tr>
-                    <th>Dia 3</th>
-
-                    <td>
-                        <h3>DJ</h3>
-
-                        <p>4:30 - 7:30 PM</p>
-
-                        <p>Dead Mouse</p>
-
-                        <div></div>
-                    </td>
-
-                    <td style="background-color: #D1CFC0"></td>
-
-                    <td>
-                        <h3>Trap music</h3>
-
-                        <p>6:00 - 10:00 PM</p>
-
-                        <p>Veigh</p>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-
-
-    <div class="formulario">
-        <h1 id="titulo_form">Interessado? Vamos conversar! </h1>
-
-        <form id="form">
-
-            <div class="campo">
-                <label for="nome"><strong>Nome</strong> </label>
-                <input type="text" name="Nome" id="caixaform" required>
-
-                <label for="sobrenome"><strong>Sobrenome</strong> </label>
-                <input type="text" name="sobrenome" id="caixaform" required>
-            </div>
-
-
-            <div class="campo">
-                <label for="email"><strong> E-mail</strong></label>
-                <input type="email" name="email" pattern="[^ @]*@[^ @]*" id="caixaform" required>
-            </div>
-
-            <div class="campo">
-                <br>
-                <label><strong>Observações</strong> </label>
-                <textarea name="observa" id="caixaform" rows="7" style="width: 50%"></textarea>
-            </div>
-            <button class="btn" type="submit">Concluido</button>
-
-        </form>
-
-
-    </div>
+    </script>
 </body>
 
 </html>
