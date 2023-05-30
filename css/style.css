@@ -526,22 +526,5 @@ footer .conteudo2 h2{
 
 @media screen and (max-width:700px) {
 
-  .sobre_evento_img{
-    width: 100%;
-    display: block;
-    height: auto;
-    flex-direction: column;
 
-  }
-
-  .textopagina{
-    width: 100%;
-    display: block;
-    flex-direction: column;
-
-
-  }
-  nav{
-      position: static
-  }
 }
