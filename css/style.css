@@ -106,7 +106,7 @@ ul {
   position: relative;
   overflow: hidden;
   width: 100%;
-  padding-top: 100px;
+  padding-top: 50px;
   height: calc(100vh - 51px);
   /*Comprimento da tela   VH?   */
 }
@@ -303,12 +303,11 @@ ul {
 
 /* programação */
 .programacao {
-  margin-top: 5%;
+  margin-top: 3%;
   overflow: hidden;
   width: 100%;
-  padding-top: 100px;
-  height: calc(100vh - 51px);
-
+  padding-top: 3%;
+  height: 50%;
 
   /* imagem de fundo */
   background-image: url('../Imagem/fundo_tabela.jpg');
@@ -330,8 +329,9 @@ ul {
   overflow: hidden;
   margin: 0 auto;
   filter: drop-shadow(2px 2px 4px #606060);
-  width: 75%;
-  height: 75%;
+  width: 80%;
+  height: 100%;
+  border: 1px;
   font-family: 'Outfit', sans-serif;
 }
 
@@ -344,7 +344,6 @@ ul {
 #tabela_prog th,
 tr,
 td {
-  width: 25%;
   padding: 1.5em;
 }
 
@@ -358,7 +357,6 @@ td {
   color: white;
   text-align: center;
   font-family: 'Outfit', sans-serif;
-
 }
 
 #td_bluepen {
@@ -389,7 +387,7 @@ td {
   border: 2px solid black;
   padding: 1px;
   box-sizing: border-box;
-  font-size: 80%;
+  font-size: 50%;
 }
 
 #td_marron {
@@ -420,9 +418,8 @@ td {
 .formulario {
   overflow: hidden;
   width: 100%;
-  padding-top: 10%;
-  padding-bottom: 5%;
-  height: calc(100vh - 50px);
+  padding-bottom: 5%;  
+  height: calc(90vh - 30px);
   background-color: rgb(230, 236, 241);
   display: block;
   margin: 0 auto;
@@ -432,7 +429,7 @@ td {
   align-items: center;
   border: #000000 solid 1px;
   border-radius: 10%;
-  width: 70%;
+  width: 35%;
   margin: 0 auto;
   background-color: #ffffff;
   filter: drop-shadow(15px 15px 20px#606060);
@@ -468,22 +465,16 @@ td {
 }
 
 
-.btn {
-  margin-top: 1%;
-  background: #EE5007;
-  border: 0;
+.btn {  
   display: block;
-  margin: 0 auto;
+  border: none;
+  background: #EE5007;
   border-radius: 2em;
-  margin-bottom: 2em;
   color: #ffffff;
-  font-size: 01em;
-  font-weight: 700;
-  /* deixa o texto mais encorpado */
-  transition: all 0.3s;
-  padding: 1em 1.0em;
-  width: 18%;
-  text-align: center;
+  margin-bottom: 5px;
+  font-size: 20px;
+  padding: 10px;
+  margin:  0 auto;
 }
 
 #caixaform {
@@ -628,7 +619,7 @@ footer .conteudo2 h2 {
     overflow: hidden;
     margin: 0 auto;
     filter: drop-shadow(2px 2px 4px #606060);
-    width: 30%;
+    width: 20%;
     height: 30%;
     font-family: 'Outfit', sans-serif;
   }
@@ -727,6 +718,86 @@ footer .conteudo2 h2 {
     position: unset;
     margin-top: 15px;
   }
+  .programacao {
+    margin-top: 3%;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 3%;
+    height: 50%;  
+    /* imagem de fundo */
+    background-image: url('../Imagem/fundo_tabela.jpg');
+    background-size: cover;
+  }
+  
+#form {
+  align-items: center;
+  border: #000000 solid 1px;
+  border-radius: 10%;
+  width: 90%;
+  margin: 0 auto;
+  background-color: #ffffff;
+  filter: drop-shadow(15px 15px 20px#606060);
+  display: block;
+  margin: 0 auto;
+}
+  
+#tabela_prog {
+  border-radius: 5%;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  filter: drop-shadow(2px 2px 4px #606060);
+  width: 80%;
+  height: 100%;
+  border: 1px;
+  font-family: 'Outfit', sans-serif;
+}
+
+#tabela_prog th {
+  background: #EE5007;
+  font-family: 'Outfit', sans-serif;
+  color: white;
+}
+
+#tabela_prog th,
+tr,
+td {
+  padding: 1px;
+}
+
+#tabela_prog p {
+  margin-bottom: 2%;
+}
+
+#tbody_prog th,
+td {
+  background-color: rgb(31, 28, 28);
+  color: white;
+  text-align: center;
+  font-family: 'Outfit', sans-serif;
+}
+
+#td_bluepen {
+  background-image: url('../Imagem/Artistas/bluepen2.jpg');
+  color: white;
+  background-size: cover;
+  font-family: 'Outfit', sans-serif;
+
+}
+
+#td_acdc {
+  background-image: url('../Imagem/Artistas/ACDC.jpg');
+  color: white;
+  background-size: cover;
+  font-family: 'Outfit', sans-serif;
+}
+
+#td_marron {
+  background-image: url('../Imagem/Artistas/Maroon5.jpg');
+  color: white;
+  background-size: cover;
+  font-family: 'Outfit', sans-serif;
+}
 
 
 }
