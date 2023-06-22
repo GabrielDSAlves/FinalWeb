@@ -106,8 +106,8 @@ ul {
   position: relative;
   overflow: hidden;
   width: 100%;
-  padding-top: 150px;
-  height: calc(100vh - 20px);
+  padding-top: 100px;
+  height: calc(100vh - 51px);
   /*Comprimento da tela   VH?   */
 }
 
@@ -303,11 +303,12 @@ ul {
 
 /* programação */
 .programacao {
-  margin-top: 3%;
+  margin-top: 5%;
   overflow: hidden;
   width: 100%;
-  padding-top: 3%;
-  height: 50%;
+  padding-top: 100px;
+  height: calc(100vh - 51px);
+
 
   /* imagem de fundo */
   background-image: url('../Imagem/fundo_tabela.jpg');
@@ -329,9 +330,8 @@ ul {
   overflow: hidden;
   margin: 0 auto;
   filter: drop-shadow(2px 2px 4px #606060);
-  width: 80%;
-  height: 100%;
-  border: 1px;
+  width: 75%;
+  height: 75%;
   font-family: 'Outfit', sans-serif;
 }
 
@@ -344,6 +344,7 @@ ul {
 #tabela_prog th,
 tr,
 td {
+  width: 25%;
   padding: 1.5em;
 }
 
@@ -357,6 +358,7 @@ td {
   color: white;
   text-align: center;
   font-family: 'Outfit', sans-serif;
+
 }
 
 #td_bluepen {
@@ -387,7 +389,7 @@ td {
   border: 2px solid black;
   padding: 1px;
   box-sizing: border-box;
-  font-size: 50%;
+  font-size: 80%;
 }
 
 #td_marron {
@@ -418,8 +420,9 @@ td {
 .formulario {
   overflow: hidden;
   width: 100%;
-  padding-bottom: 25%;  
-  height: calc(90vh - 30px);
+  padding-top: 10%;
+  padding-bottom: 5%;
+  height: calc(100vh - 50px);
   background-color: rgb(230, 236, 241);
   display: block;
   margin: 0 auto;
@@ -429,7 +432,7 @@ td {
   align-items: center;
   border: #000000 solid 1px;
   border-radius: 10%;
-  width: 35%;
+  width: 70%;
   margin: 0 auto;
   background-color: #ffffff;
   filter: drop-shadow(15px 15px 20px#606060);
@@ -465,16 +468,22 @@ td {
 }
 
 
-.btn {  
-  display: block;
-  border: none;
+.btn {
+  margin-top: 1%;
   background: #EE5007;
+  border: 0;
+  display: block;
+  margin: 0 auto;
   border-radius: 2em;
+  margin-bottom: 2em;
   color: #ffffff;
-  margin-bottom: 5px;
-  font-size: 20px;
-  padding: 10px;
-  margin:  0 auto;
+  font-size: 01em;
+  font-weight: 700;
+  /* deixa o texto mais encorpado */
+  transition: all 0.3s;
+  padding: 1em 1.0em;
+  width: 18%;
+  text-align: center;
 }
 
 #caixaform {
@@ -545,16 +554,14 @@ footer .conteudo2 h2 {
 }
 
 /*Responsividade*/
-
-
-@media (max-width: 500px) {
+@media (max-width: 480px) {
 
   #titulo2_sobre,
   #texto_sobre,
   #item_sobre,
   #item_sobre2 {
-    padding-left: 6%;
-    padding-right: 6%;
+    padding-left: 5%;
+    padding-right: 5%;
     /* Adiciona padding direito */
     width: 90%;
     /* Define a largura para ocupar a maior parte da tela */
@@ -562,79 +569,20 @@ footer .conteudo2 h2 {
     /* Centraliza horizontalmente */
     margin-right: auto;
     /* Centraliza horizontalmente */
-    font-size: 20px;
   }
 
   #sobre_evento_img {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    position: unset;
-  }
-  .artistas {
-    overflow: hidden;
-    width: 100%;
-    padding-top: 10px;
-    /* height: calc(100vh - 51px); */
-  }
-  
-  #titulo_artista {
-    font-size: 55px;
-    color: #000000;
-    font-family: 'Lobster', cursive;
-    text-align: center;
-    width: 100%;
-  }
-  
-  #art1 {
-    position: relative;
-    display: flex;
-    float: left;
+    top: 100%;
+    position: static;
     width: 50%;
-    margin-left: 5%;
-    border-radius: 10%;
-    margin-top: 5%;
-    margin-right: 5%;
-  }  
-  #art2 {
-    position: relative;
-    float: inherit;
-    /*explicação*/
-    border-radius: 10%;
-    display: block;
-    width: 35%;
-    margin-top: 2%;
-  }  
-  #art3 {
-    padding-top: 1%;
-    float: inherit;
-    /*explicação*/
-    width: 35%;
-    position: relative;
-    border-radius: 10%;
-  }
-  #tabela_prog {
-    border-radius: 5%;
-    position: relative;
-    overflow: hidden;
     margin: 0 auto;
-    filter: drop-shadow(2px 2px 4px #606060);
-    width: 20%;
-    height: 30%;
-    font-family: 'Outfit', sans-serif;
+    margin-top: 10%;
   }
-  #tabela_prog th,tr,td {
-  width: 5%;
-  padding: 1.5em;
-}
-   
 }
 
 
 /* menu toggle */
 @media (max-width: 768px) {
-
-
   .menu-toggle {
     display: block;
     background: none;
@@ -650,7 +598,7 @@ footer .conteudo2 h2 {
   .menu-toggle:before {
     content: "\2630";
     /* Ícone de menu padrão do HTML */
-    font-size: 45px;
+    font-size: 24px;
     color: #ffffff;
   }
 
@@ -662,23 +610,23 @@ footer .conteudo2 h2 {
   .menu {
     display: none;
     position: absolute;
-    top: 10px;
+    top: 70px;
     right: 0;
     background-color: #000000;
-    width: 99%;
+    width: 100%;
     padding: 10px;
-    z-index: 990
+    z-index: 998;
   }
 
   .menu.active {
     display: block;
-    padding-top: 10px;
+    padding-top: 50px;
     /* Ajusta o espaçamento do menu para evitar que fique sobreposto pelo botão toggle */
   }
 
   .menu ul {
-    margin: 5px;
-    padding: 10px;
+    margin: 0;
+    padding: 0;
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -686,120 +634,12 @@ footer .conteudo2 h2 {
 
   .menu li {
     margin-bottom: 10px;
-    font-size: 25px;
-    padding: 2px;
   }
 
   .menu .botao {
-    display: flex;
+    display: block;
     color: #ffffff;
-    font-size: 25px;
+    font-size: 18px;
     text-decoration: none;
   }
-  #sobre_evento_img {
-    filter: brightness(50%);  
-    width: 80%;
-    height: 50;
-    top: 100%;
-    left: 50%;
-    z-index: 3;
-  }
-  .sobre {
-    overflow: hidden;
-    width: 100%;
-    padding-top: 35px;
-    height: calc(110vh - 50px);  
-    /* imagem de fundo */
-    background-image: url('../Imagem/fundo_sobre.jpg');
-    background-size: cover;
-  }
-  #sobre_evento_img {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    position: unset;
-    margin-top: 15px;
-  }
-  .programacao {
-    margin-top: 3%;
-    overflow: hidden;
-    width: 100%;
-    padding-top: 3%;
-    height: 50%;  
-    /* imagem de fundo */
-    background-image: url('../Imagem/fundo_tabela.jpg');
-    background-size: cover;
-  }
-  
-#form {
-  align-items: center;
-  border: #000000 solid 1px;
-  border-radius: 10%;
-  width: 90%;
-  margin: 0 auto;
-  background-color: #ffffff;
-  filter: drop-shadow(15px 15px 20px#606060);
-  display: block;
-  margin: 0 auto;
-}
-  
-#tabela_prog {
-  border-radius: 5%;
-  position: relative;
-  overflow: hidden;
-  margin: 0 auto;
-  filter: drop-shadow(2px 2px 4px #606060);
-  width: 80%;
-  height: 100%;
-  border: 1px;
-  font-family: 'Outfit', sans-serif;
-}
-
-#tabela_prog th {
-  background: #EE5007;
-  font-family: 'Outfit', sans-serif;
-  color: white;
-}
-
-#tabela_prog th,
-tr,
-td {
-  padding: 1px;
-}
-
-#tabela_prog p {
-  margin-bottom: 2%;
-}
-
-#tbody_prog th,
-td {
-  background-color: rgb(31, 28, 28);
-  color: white;
-  text-align: center;
-  font-family: 'Outfit', sans-serif;
-}
-
-#td_bluepen {
-  background-image: url('../Imagem/Artistas/bluepen2.jpg');
-  color: white;
-  background-size: cover;
-  font-family: 'Outfit', sans-serif;
-
-}
-
-#td_acdc {
-  background-image: url('../Imagem/Artistas/ACDC.jpg');
-  color: white;
-  background-size: cover;
-  font-family: 'Outfit', sans-serif;
-}
-
-#td_marron {
-  background-image: url('../Imagem/Artistas/Maroon5.jpg');
-  color: white;
-  background-size: cover;
-  font-family: 'Outfit', sans-serif;
-}
-
-
 }
